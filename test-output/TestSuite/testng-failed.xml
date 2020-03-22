@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [TestSuite]">
+  <parameter name="browser" value="chrome"/>
+  <test thread-count="1" name="Test">
+    <classes>
+      <class name="tests.ContactUsTest"/>
+      <class name="tests.SearchProduct"/>
+      <class name="tests.ChangeCurrency"/>
+      <class name="tests.OpenNotebooks"/>
+      <class name="tests.RegisterationTest"/>
+      <class name="tests.SendFriendEmailTest"/>
+      <class name="tests.AddingReviewTest"/>
+      <class name="tests.ChangePasswordTest"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test(failed)">
+    <classes>
+      <class name="tests.SearchProduct">
+        <methods>
+          <include name="ProductSearch"/>
+        </methods>
+      </class> <!-- tests.SearchProduct -->
+      <class name="tests.ChangePasswordTest">
+        <methods>
+          <include name="ChangePassword"/>
+        </methods>
+      </class> <!-- tests.ChangePasswordTest -->
+      <class name="tests.SendFriendEmailTest">
+        <methods>
+          <include name="SendFriendEmail"/>
+        </methods>
+      </class> <!-- tests.SendFriendEmailTest -->
+      <class name="tests.ContactUsTest">
+        <methods>
+          <include name="ContactUs"/>
+          <include name="StartDriver"/>
+        </methods>
+      </class> <!-- tests.ContactUsTest -->
+      <class name="tests.ChangeCurrency">
+        <methods>
+          <include name="ChangeProductCurrency"/>
+        </methods>
+      </class> <!-- tests.ChangeCurrency -->
+      <class name="tests.AddingReviewTest">
+        <methods>
+          <include name="AddingReviewing"/>
+        </methods>
+      </class> <!-- tests.AddingReviewTest -->
+      <class name="tests.OpenNotebooks">
+        <methods>
+          <include name="OpenNotebooksByHover"/>
+        </methods>
+      </class> <!-- tests.OpenNotebooks -->
+      <class name="tests.RegisterationTest">
+        <methods>
+          <include name="UserCanRegister"/>
+        </methods>
+      </class> <!-- tests.RegisterationTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [TestSuite] -->

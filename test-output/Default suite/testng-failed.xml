@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="tests.TC2_API_Automation">
+        <methods>
+          <include name="EndDriver"/>
+          <include name="TC4_API_facts_animal"/>
+          <include name="TC5_API_user"/>
+          <include name="TC2_API_facts_random"/>
+          <include name="StartDriver"/>
+          <include name="TC3_API_facts_withID"/>
+          <include name="TakeScreenShotWhenFailure"/>
+        </methods>
+      </class> <!-- tests.TC2_API_Automation -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

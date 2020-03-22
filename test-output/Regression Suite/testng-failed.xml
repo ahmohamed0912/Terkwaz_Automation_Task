@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Regression Suite]">
+  <parameter name="browser" value="firefox"/>
+  <test name="Regression Test Chrome">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="tests.RegisterationTestWithFakerJavaParallel"/>
+    </classes>
+  </test> <!-- Regression Test Chrome -->
+  <test name="Regression Test Firefox">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="tests.RegisterationTestWithFakerJavaParallel"/>
+    </classes>
+  </test> <!-- Regression Test Firefox -->
+  <test name="Regression Test Chrome(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="tests.RegisterationTestWithFakerJavaParallel">
+        <methods>
+          <include name="EndDriver"/>
+          <include name="UserCanRegister"/>
+          <include name="TakeScreenShotWhenFailure"/>
+          <include name="TakeScreenShotWhenFailure"/>
+          <include name="StartDriver"/>
+        </methods>
+      </class> <!-- tests.RegisterationTestWithFakerJavaParallel -->
+    </classes>
+  </test> <!-- Regression Test Chrome(failed) -->
+</suite> <!-- Failed suite [Regression Suite] -->

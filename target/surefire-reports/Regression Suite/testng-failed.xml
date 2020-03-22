@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Regression Suite]">
+  <parameter name="browser" value="Chrome"/>
+  <test thread-count="5" verbose="0" name="Regression Test(failed)">
+    <classes>
+      <class name="tests.AddingReviewTest">
+        <methods>
+          <include name="EndDriver"/>
+          <include name="AddingReviewing"/>
+          <include name="StartDriver"/>
+          <include name="TakeScreenShotWhenFailure"/>
+        </methods>
+      </class> <!-- tests.AddingReviewTest -->
+      <class name="tests.ContactUsTest">
+        <methods>
+          <include name="ContactUs"/>
+          <include name="EndDriver"/>
+          <include name="StartDriver"/>
+          <include name="TakeScreenShotWhenFailure"/>
+        </methods>
+      </class> <!-- tests.ContactUsTest -->
+      <class name="tests.SendFriendEmailTest">
+        <methods>
+          <include name="SendFriendEmail"/>
+          <include name="EndDriver"/>
+          <include name="StartDriver"/>
+          <include name="TakeScreenShotWhenFailure"/>
+        </methods>
+      </class> <!-- tests.SendFriendEmailTest -->
+      <class name="tests.ChangePasswordTest">
+        <methods>
+          <include name="ChangePassword"/>
+          <include name="EndDriver"/>
+          <include name="StartDriver"/>
+          <include name="TakeScreenShotWhenFailure"/>
+        </methods>
+      </class> <!-- tests.ChangePasswordTest -->
+      <class name="tests.RegisterationTest">
+        <methods>
+          <include name="EndDriver"/>
+          <include name="StartDriver"/>
+          <include name="TakeScreenShotWhenFailure"/>
+          <include name="UserCanRegister"/>
+        </methods>
+      </class> <!-- tests.RegisterationTest -->
+      <class name="tests.SearchProduct">
+        <methods>
+          <include name="ProductSearch"/>
+          <include name="EndDriver"/>
+          <include name="StartDriver"/>
+          <include name="TakeScreenShotWhenFailure"/>
+        </methods>
+      </class> <!-- tests.SearchProduct -->
+      <class name="tests.ChangeCurrency">
+        <methods>
+          <include name="EndDriver"/>
+          <include name="ChangeProductCurrency"/>
+          <include name="StartDriver"/>
+          <include name="TakeScreenShotWhenFailure"/>
+        </methods>
+      </class> <!-- tests.ChangeCurrency -->
+      <class name="tests.OpenNotebooks">
+        <methods>
+          <include name="OpenNotebooksByHover"/>
+          <include name="EndDriver"/>
+          <include name="StartDriver"/>
+          <include name="TakeScreenShotWhenFailure"/>
+        </methods>
+      </class> <!-- tests.OpenNotebooks -->
+    </classes>
+  </test> <!-- Regression Test(failed) -->
+</suite> <!-- Failed suite [Regression Suite] -->
